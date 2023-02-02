@@ -8,12 +8,15 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //TabBarの文字選択時の色をRGBで指定
+        let TabColorKey = UIColor(red: 49/255, green: 100/255, blue: 113/255, alpha:1 )
+        UITabBar.appearance().tintColor = TabColorKey
+        
     }
-
 
 }
 
