@@ -8,72 +8,124 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="HomeViewController" title="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="KyouHare" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="sKx-Qf-8bc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="982.44274809160299" y="3.5211267605633805"/>
-        </scene>
-        <!--検索-->
-        <scene sceneID="ESe-G5-3Vf">
-            <objects>
-                <viewController storyboardIdentifier="SearchViewController" title="検索" id="jJA-67-uO4" customClass="SearchViewController" customModule="KyouHare" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ttZ-5W-Bax">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4nZ-oX-Bgm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="検索" image="magnifyingglass" catalog="system" id="QNZ-5O-hsw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uGG-YS-CYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1996" y="4"/>
-        </scene>
-        <!--お気に入り-->
-        <scene sceneID="Bhi-b9-L3V">
-            <objects>
-                <viewController storyboardIdentifier="FavoriteViewController" title="お気に入り" id="AiG-nb-ahp" customClass="FavoriteViewController" customModule="KyouHare" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9yx-Bb-FJo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="c5X-t0-miU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="お気に入り" image="star" catalog="system" id="JhX-AB-Awx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fp2-U2-mlI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3025" y="4"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FVb-jv-SA5">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IZH-Pr-ux3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zur-II-cls">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BcZ-nl-GPD"/>
-                        <segue destination="jJA-67-uO4" kind="relationship" relationship="viewControllers" id="mEw-Wi-Nwr"/>
-                        <segue destination="AiG-nb-ahp" kind="relationship" relationship="viewControllers" id="INI-0p-VHF"/>
+                        <segue destination="VsW-BS-d5Q" kind="relationship" relationship="viewControllers" id="CJ4-zy-HPE"/>
+                        <segue destination="mte-eD-Z32" kind="relationship" relationship="viewControllers" id="R3O-v0-IqZ"/>
+                        <segue destination="cOR-BF-Kbg" kind="relationship" relationship="viewControllers" id="XbY-65-vWD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZb-NS-SIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="68" y="-558"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="5vc-7r-2E6">
+            <objects>
+                <navigationController id="VsW-BS-d5Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="aJo-vV-THO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GJb-lW-Ve3">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WK5-vh-va6" kind="relationship" relationship="rootViewController" id="1BP-v4-WuF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBg-Rd-JHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="293"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="yg2-wb-TJU">
+            <objects>
+                <viewController id="WK5-vh-va6" customClass="HomeViewController" customModule="KyouHare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X4X-Xn-RnY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g4R-1w-ssP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="vq1-7j-YyB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QA0-dK-4jG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="1147"/>
+        </scene>
+        <!--検索-->
+        <scene sceneID="YAz-Eg-AHk">
+            <objects>
+                <viewController id="kcS-4X-Hsc" customClass="SearchViewController" customModule="KyouHare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wb4-04-aY8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="I4v-Uc-r2G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="検索" id="6cu-zb-c3s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pm9-w6-LSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798" y="1146"/>
+        </scene>
+        <!--お気に入り-->
+        <scene sceneID="o88-AD-lhj">
+            <objects>
+                <viewController id="Cpr-sG-f9F" customClass="FavoriteViewController" customModule="KyouHare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GKk-ms-qEF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Hq-QB-bQB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="お気に入り" id="Xgn-fK-Vsp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhG-qD-KHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792" y="1146"/>
+        </scene>
+        <!--検索-->
+        <scene sceneID="7QP-Ks-vKI">
+            <objects>
+                <navigationController id="mte-eD-Z32" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="検索" image="magnifyingglass" catalog="system" id="LCy-Uc-Ubw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Esb-lk-RpI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kcS-4X-Hsc" kind="relationship" relationship="rootViewController" id="wMn-ez-0KK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHV-a7-3Vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798" y="293"/>
+        </scene>
+        <!--お気に入り-->
+        <scene sceneID="8Db-cn-1EF">
+            <objects>
+                <navigationController id="cOR-BF-Kbg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="お気に入り" image="star" catalog="system" id="SvH-Vq-rMy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UYR-37-QSs">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Cpr-sG-f9F" kind="relationship" relationship="rootViewController" id="lri-ep-XIs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQB-Gy-F6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792" y="293"/>
         </scene>
     </scenes>
     <resources>
